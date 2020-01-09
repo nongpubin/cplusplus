@@ -7,6 +7,7 @@ enum class shape_type
     rectangle,
 };
 
+
 class shape
 {
 private:
