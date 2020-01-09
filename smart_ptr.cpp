@@ -3,6 +3,7 @@
 #include <unistd.h>
 
 #if 0
+
 template <typename T>
 class smart_ptr
 {
