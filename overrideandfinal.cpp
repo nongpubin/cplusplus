@@ -45,15 +45,37 @@ class D : public C
 };
 */
 
+class Base
+{
+public:
+    virtual void f() { cout << "Base::f" << endl; }
+    virtual void g() { cout << "Base::g" << endl; }
+    virtual void h() { cout << "Base::h" << endl; }
+};
+
+class  derive : public Base
+{
+
+public:
+     derive(){}
+     void f() { cout << "derive::f" << endl; }
+     ~derive() {}
+};
+
+ 
+
 
 int main()
 {
-    B testb;
-    testb.foo();
+   /* B testb;
+    testb.foo();*/
 
    /* C testc;
     testc.foo();
 */
-    cout << "override test" << endl;
-    return 0;
+   Base *b = new derive();
+   b->f();
+
+   cout << "override test" << endl;
+   return 0;
 }
