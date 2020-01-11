@@ -7,8 +7,6 @@ using namespace std;
 
 int main()
 {
-    cout << "hello" << endl;
-
     vector<int> v{1, 2, 3, 4};
     cout << v << endl;
 
